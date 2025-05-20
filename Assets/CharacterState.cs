@@ -23,10 +23,14 @@ public class CharacterState : MonoBehaviour
         return 60;
     }
 
-    public void DepleteStaminaWithParameter(string parameter)
+    public void DepleteStaminaWithParameter(float amount, out bool zeroHealth)
     {
-        //float motionValue =  GetComponent<Animator>().GetFloat(parameter);
-        //DepleteStamina(motionValue);
+        currentHealth -= amount;
+        zeroHealth = false;
+        if (currentHealth <= 0)
+        {
+            zeroHealth = true;
+        }
     }
 
     private void Start()
