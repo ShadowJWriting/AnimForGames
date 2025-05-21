@@ -13,7 +13,7 @@ public class DamageController : MonoBehaviour
 
     public void EnqueueDamage(DamageMessage damage)
     {
-        if (ignoreDamage || damageList.Any(dmg => dmg.sender == damage.sender)) return;
+        if(ignoreDamage || damageList.Any(dmg => dmg.sender == damage.sender)) return;
         damageList.Add(damage);
     }
 

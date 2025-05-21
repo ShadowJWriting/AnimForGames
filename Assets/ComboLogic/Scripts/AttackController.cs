@@ -33,9 +33,10 @@ public class AttackController : MonoBehaviour
     {
         Game.Instance.PlayerOne.DepleteStamina(value);
     }
-    public void DepleteStaminaWithParameter(string value)
+    public void DepleteStaminaWithParameter(string parameter)
     {
-        Game.Instance.PlayerOne.DepleteStaminaWithParameter(value);
+        float motionValue = GetComponent<Animator>().GetFloat(parameter);
+        DepleteStamina(motionValue);
     }
 
     private void Awake()

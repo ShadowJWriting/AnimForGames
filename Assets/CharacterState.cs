@@ -3,27 +3,25 @@ using UnityEngine;
 
 public class CharacterState : MonoBehaviour
 {
-    [SerializeField] private float startStamina = 40;
-    [SerializeField] private float staminaRegen = 20;
+    [SerializeField] private float startStamina = 1000.0f;
+    [SerializeField] private float staminaRegen = 1000.0f;
+    [SerializeField] private float startHealth = 100.0f;
 
-    [SerializeField] private float startHealth = 10000;
-    
     [SerializeField] private float currentStamina;
-    [SerializeField] private float currentHealth;
+    [SerializeField] private float currentHealth = 100.0f;
 
-    public float CurrentStamina => currentStamina;
-    private void RegenStamina(float regenAmount)
+    private void RegenerateStamina(float regenAmount)
     {
         currentStamina = Mathf.Min(currentStamina + regenAmount, startStamina);
     }
 
-    float GetStaminaDepletion()
+    private float GetStaminaDepletion()
     {
-        //sistema de inventario -1/statfuerza * 1/buff_fuerza
+        //sistema de inventario *1/stat_fuerza * 1/buff_fuerza
         return 60;
     }
 
-    public void DepleteStaminaWithParameter(float amount, out bool zeroHealth)
+    public void DepleteHealth(float amount, out bool zeroHealth)
     {
         currentHealth -= amount;
         zeroHealth = false;
@@ -33,26 +31,20 @@ public class CharacterState : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        currentStamina = startStamina;
-    }
-
     public void DepleteStamina(float amount)
     {
         currentStamina -= GetStaminaDepletion() * amount;
     }
 
-    public void DepleteHealth(float amount)
+    private void Start()
     {
-        currentHealth -= amount;
-        if (currentHealth <= 0)
-        {
-            //death
-        }
+        currentStamina = startStamina;
     }
+
     private void Update()
     {
-        RegenStamina(staminaRegen * Time.deltaTime);
+        RegenerateStamina(staminaRegen * Time.deltaTime);
     }
+
+    public float CurrentStamina => currentStamina;
 }

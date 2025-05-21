@@ -1,25 +1,19 @@
- using System;
- using UnityEngine;
+using UnityEngine;
 
 public class Hitbox : MonoBehaviour, IDamageSender<DamageMessage>
 {
- [SerializeField] float _damage;
+    [SerializeField] private DamageMessage damageMessage;
 
- private void OnTriggerEnter(Collider other)
- {
-  if (other.TryGetComponent(out IDamageReciever<DamageMessage> receiver))
-  {
-   SendDamage(receiver);
-  }
- }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent(out IDamageReciever<DamageMessage> receiver))
+        {
+            SendDamage(receiver);
+        }
+    }
 
- public void SendDamage(IDamageReciever<DamageMessage> receiver)
- {
-  DamageMessage dmg = new DamageMessage()
-  {
-   sender = transform.root.gameObject,
-   amount = _damage
-  };
-  receiver.RecieveDamage(dmg);
- }
+    public void SendDamage(IDamageReciever<DamageMessage> receiver)
+    {
+        receiver.RecieveDamage(damageMessage);
+    }
 }

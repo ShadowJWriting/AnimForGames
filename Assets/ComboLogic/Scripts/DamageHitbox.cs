@@ -20,6 +20,6 @@ public class DamageHitbox : MonoBehaviour, IDamageReciever<DamageMessage>
         }
         damage.amount = damage.amount * defenseMultiplier;
         onHit?.Invoke(damage);
-        Game.Instance.PlayerOne.DepleteHealth(damage.amount);
+        Debug.Log($"Received damage ({damage.amount})");
     }
 }

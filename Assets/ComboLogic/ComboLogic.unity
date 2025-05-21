@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 102122704}
   - component: {fileID: 102122703}
   - component: {fileID: 102122702}
+  - component: {fileID: 102122706}
   m_Layer: 8
   m_Name: Left Calf
   m_TagString: Untagged
@@ -255,6 +256,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102122700}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &102122706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102122700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &136018571
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +297,7 @@ GameObject:
   - component: {fileID: 136018575}
   - component: {fileID: 136018574}
   - component: {fileID: 136018573}
+  - component: {fileID: 136018577}
   m_Layer: 8
   m_Name: Right Forearm
   m_TagString: Untagged
@@ -391,6 +421,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136018571}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &136018577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136018571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &207900885 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
@@ -541,6 +599,19 @@ CapsuleCollider:
   m_Height: 1.830665
   m_Direction: 1
   m_Center: {x: 0, y: 0.8953325, z: 0}
+--- !u!114 &207900895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207900885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8737b949750377e4386794a61bab2a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreDamage: 0
 --- !u!1 &248587735
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +734,7 @@ GameObject:
   - component: {fileID: 263943222}
   - component: {fileID: 263943221}
   - component: {fileID: 263943220}
+  - component: {fileID: 263943224}
   m_Layer: 8
   m_Name: Right Leg
   m_TagString: Untagged
@@ -786,6 +858,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263943218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &263943224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263943218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &272087796
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +899,7 @@ GameObject:
   - component: {fileID: 272087800}
   - component: {fileID: 272087799}
   - component: {fileID: 272087798}
+  - component: {fileID: 272087802}
   m_Layer: 8
   m_Name: Left Foot
   m_TagString: Untagged
@@ -922,6 +1023,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272087796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &272087802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272087796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &299008292
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +1064,7 @@ GameObject:
   - component: {fileID: 299008296}
   - component: {fileID: 299008295}
   - component: {fileID: 299008294}
+  - component: {fileID: 299008298}
   m_Layer: 8
   m_Name: Waist
   m_TagString: Untagged
@@ -1058,6 +1188,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299008292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &299008298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299008292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07269541, y: 0.8981043, z: -0.16232195, w: -0.4022134}
+  m_LocalRotation: {x: -0.09014212, y: 0.8483052, z: -0.15332131, w: -0.49874365}
   m_LocalPosition: {x: 2.75, y: 3.57, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1441,6 +1599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506475630}
+  - component: {fileID: 506475631}
   m_Layer: 0
   m_Name: ARPGCharacter
   m_TagString: Untagged
@@ -1467,6 +1626,33 @@ Transform:
   - {fileID: 1278676720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &506475631
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506475629}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &551635201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551635201}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07269542, y: 0.8981043, z: -0.16232194, w: -0.4022134}
+  m_LocalRotation: {x: -0.09014212, y: 0.8483052, z: -0.15332133, w: -0.49874374}
   m_LocalPosition: {x: 2.75, y: 3.57, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1605,6 +1791,7 @@ GameObject:
   - component: {fileID: 568083129}
   - component: {fileID: 568083128}
   - component: {fileID: 568083127}
+  - component: {fileID: 568083131}
   m_Layer: 8
   m_Name: Right Calf
   m_TagString: Untagged
@@ -1728,6 +1915,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568083125}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &568083131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568083125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &725994864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,6 +1956,7 @@ GameObject:
   - component: {fileID: 725994868}
   - component: {fileID: 725994867}
   - component: {fileID: 725994866}
+  - component: {fileID: 725994870}
   m_Layer: 8
   m_Name: Left Forearm
   m_TagString: Untagged
@@ -1864,6 +2080,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725994864}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &725994870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725994864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &773567030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +2121,7 @@ GameObject:
   - component: {fileID: 773567034}
   - component: {fileID: 773567033}
   - component: {fileID: 773567032}
+  - component: {fileID: 773567036}
   m_Layer: 8
   m_Name: 'Right Arm '
   m_TagString: Untagged
@@ -2000,6 +2245,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773567030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &773567036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773567030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2335,7 @@ GameObject:
   - component: {fileID: 1017084404}
   - component: {fileID: 1017084403}
   - component: {fileID: 1017084402}
+  - component: {fileID: 1017084406}
   m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
@@ -2185,6 +2459,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017084400}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1017084406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017084400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1056335353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2299,6 +2601,7 @@ GameObject:
   - component: {fileID: 1062109494}
   - component: {fileID: 1062109493}
   - component: {fileID: 1062109492}
+  - component: {fileID: 1062109496}
   m_Layer: 8
   m_Name: Chest
   m_TagString: Untagged
@@ -2422,6 +2725,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062109490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1062109496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062109490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1159489361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2766,7 @@ GameObject:
   - component: {fileID: 1159489365}
   - component: {fileID: 1159489364}
   - component: {fileID: 1159489363}
+  - component: {fileID: 1159489367}
   m_Layer: 8
   m_Name: LeftLeg
   m_TagString: Untagged
@@ -2558,6 +2890,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159489361}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1159489367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159489361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1200145319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2645,6 +3005,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 207900893}
+    - targetCorrespondingSourceObject: {fileID: 100110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207900895}
     - targetCorrespondingSourceObject: {fileID: 100102, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1200145389}
@@ -3081,6 +3444,131 @@ MonoBehaviour:
   - {fileID: 1200145325}
   - {fileID: 1200145326}
   - {fileID: 1200145323}
+--- !u!1 &1217105945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217105950}
+  - component: {fileID: 1217105949}
+  - component: {fileID: 1217105948}
+  - component: {fileID: 1217105947}
+  - component: {fileID: 1217105946}
+  m_Layer: 7
+  m_Name: DamageBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1217105946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217105945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8ddbed164a5e749b3e8fc46715a887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMessage:
+    sender: {fileID: 1217105945}
+    amount: 10
+    damageLevel: 0
+--- !u!65 &1217105947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217105945}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1217105948
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217105945}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1217105949
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217105945}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1217105950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217105945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.31, y: 1.5205064, z: 2.37}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278676719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,6 +3626,7 @@ GameObject:
   - component: {fileID: 1428710393}
   - component: {fileID: 1428710392}
   - component: {fileID: 1428710391}
+  - component: {fileID: 1428710395}
   m_Layer: 8
   m_Name: Right Foot
   m_TagString: Untagged
@@ -3261,6 +3750,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428710389}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1428710395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428710389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1725676708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3370,6 +3887,7 @@ GameObject:
   - component: {fileID: 1817342229}
   - component: {fileID: 1817342228}
   - component: {fileID: 1817342227}
+  - component: {fileID: 1817342231}
   m_Layer: 8
   m_Name: Left Arm
   m_TagString: Untagged
@@ -3493,6 +4011,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817342225}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1817342231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817342225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e80d9021a304e41bbd3cb29d83ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207900895}
+        m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
+        m_MethodName: EnqueueDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1823825033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,7 +4084,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8ddbed164a5e749b3e8fc46715a887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 500
+  damageMessage:
+    sender: {fileID: 0}
+    amount: 0
+    damageLevel: 0
 --- !u!1 &1840612965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,3 +4197,4 @@ SceneRoots:
   - {fileID: 551635203}
   - {fileID: 2143916478}
   - {fileID: 506475630}
+  - {fileID: 1217105950}
