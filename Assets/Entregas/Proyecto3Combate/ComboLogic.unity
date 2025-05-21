@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27813003}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042550806, y: -0, z: 0, w: 0.99909437}
-  m_LocalPosition: {x: 0.00000008940697, y: 1.667, z: -0.023000002}
+  m_LocalRotation: {x: -0.57908773, y: 0.40578043, z: -0.5790878, w: -0.4057796}
+  m_LocalPosition: {x: -0.05907941, y: 1.1241002, z: -0.021118045}
   m_LocalScale: {x: 0.35205296, y: 0.31494346, z: 0.35205296}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -171,7 +171,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -208,7 +208,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145338}
+  - sourceTransform: {fileID: 127056664}
     weight: 1
 --- !u!135 &27813007
 SphereCollider:
@@ -229,8 +229,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.6
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5488284
+  m_Center: {x: -4.4176993e-14, y: -0.23149675, z: -0.38422564}
 --- !u!23 &27813008
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -313,8 +313,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94314181}
   serializedVersion: 2
-  m_LocalRotation: {x: -5.2595816e-14, y: -0.0000001872535, z: 0.00000028088027, w: 1}
-  m_LocalPosition: {x: -0.11049998, y: 0.7030001, z: -0.018300056}
+  m_LocalRotation: {x: -0.4783941, y: -0.44949338, z: -0.53669065, w: 0.53014904}
+  m_LocalPosition: {x: -0.32629824, y: 0.6350742, z: -0.006101489}
   m_LocalScale: {x: 0.28502208, y: 0.31494346, z: 0.38461784}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336,7 +336,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -373,7 +373,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145328}
+  - sourceTransform: {fileID: 127056670}
     weight: 1
 --- !u!65 &94314185
 BoxCollider:
@@ -394,8 +394,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.69358355, y: 0.4884663, z: 0.7593932}
+  m_Center: {x: 0.005038636, y: 0.80739564, z: -0.13715011}
 --- !u!23 &94314186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -665,6 +665,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5ad8c3e3f75c8cf44875bc754f5f6fca, type: 3}
       propertyPath: m_Name
       value: Amy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5ad8c3e3f75c8cf44875bc754f5f6fca, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1baa5581c85c6a347b9ab2f823212f5c, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 5ad8c3e3f75c8cf44875bc754f5f6fca, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5ad8c3e3f75c8cf44875bc754f5f6fca, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1048,10 +1060,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.17770019
+  m_Height: 1.4744829
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0031754375, y: 0.73842674, z: 0.017464533}
 --- !u!114 &127056674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1449,8 +1461,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205290596}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042550802, y: 0.000000003983893, z: 0.00000009354195, w: 0.9990943}
-  m_LocalPosition: {x: 0.665, y: 1.4442, z: -0.02700007}
+  m_LocalRotation: {x: -0.14345366, y: 0.69029564, z: 0.086020045, w: 0.7039272}
+  m_LocalPosition: {x: 0.14503247, y: 1.0283206, z: -0.22468519}
   m_LocalScale: {x: 0.35205296, y: 0.119950496, z: 0.16393687}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1472,7 +1484,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -1509,7 +1521,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145342}
+  - sourceTransform: {fileID: 127056636}
     weight: 1
 --- !u!65 &205290600
 BoxCollider:
@@ -1530,8 +1542,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.3705743, y: 1, z: 1.8071847}
+  m_Center: {x: -0.59867615, y: -0.00000009832576, z: 0.40359274}
 --- !u!23 &205290601
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1808,7 +1820,7 @@ GameObject:
   - component: {fileID: 248587739}
   - component: {fileID: 248587738}
   - component: {fileID: 248587737}
-  - component: {fileID: 248587736}
+  - component: {fileID: 248587740}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -1816,28 +1828,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &248587736
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248587735}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &248587737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1906,6 +1896,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 288033719}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &248587740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248587735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.0000002, z: 6.123235e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &263943218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,8 +2532,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14588246, y: -0.5629215, z: 0.10174153, w: 0.807147}
-  m_LocalPosition: {x: 2.75, y: 3.57, z: 4.83}
+  m_LocalRotation: {x: -0.07525289, y: 0.89293104, z: -0.16271801, w: -0.4129576}
+  m_LocalPosition: {x: 3.06, y: 3.23, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2716,8 +2727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391338331}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000374507, y: -0.0000001872535, z: 7.012775e-14, w: 1}
-  m_LocalPosition: {x: -0.12400001, y: 0.32699996, z: -0.018300056}
+  m_LocalRotation: {x: -0.5043922, y: -0.46501634, z: -0.5458363, w: 0.48105207}
+  m_LocalPosition: {x: -0.27517122, y: 0.41257292, z: -0.013951182}
   m_LocalScale: {x: 0.28502208, y: 0.31494346, z: 0.38461784}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2739,7 +2750,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -2776,7 +2787,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145330}
+  - sourceTransform: {fileID: 127056613}
     weight: 1
 --- !u!65 &391338335
 BoxCollider:
@@ -2797,8 +2808,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.45257115, y: 0.49434316, z: 0.9067152}
+  m_Center: {x: 0.034063663, y: 0.5968376, z: -0.21081136}
 --- !u!23 &391338336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2894,7 +2905,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &405728741
 Transform:
@@ -2904,7 +2915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405728739}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.43106914, y: -0.7124333, z: -1.7632143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2913,7 +2924,7 @@ Transform:
   - {fileID: 533229312}
   - {fileID: 1092422288}
   - {fileID: 2087563815}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 980344632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
@@ -3098,8 +3109,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475949201}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000037450644, y: -0.0000014980282, z: -0.00000037450758, w: 1}
-  m_LocalPosition: {x: 0.097, y: 0.059699953, z: 0.07680011}
+  m_LocalRotation: {x: 0.21972853, y: -0.2204196, z: 0.6661938, w: 0.6777319}
+  m_LocalPosition: {x: 0.09338617, y: -0.0009763837, z: 0.09786403}
   m_LocalScale: {x: 0.28502208, y: 0.122324035, z: 0.66144943}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3121,7 +3132,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -3158,7 +3169,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145325}
+  - sourceTransform: {fileID: 127056608}
     weight: 1
 --- !u!65 &475949205
 BoxCollider:
@@ -3179,8 +3190,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.5901531, y: 0.82717216, z: 0.33340922}
+  m_Center: {x: -0.019164782, y: 0.086413965, z: -0.075842254}
 --- !u!23 &475949206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3326,8 +3337,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525936121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000009362654, y: -0.00000037450707, z: 0.0000005617606, w: 1}
-  m_LocalPosition: {x: -0.12400001, y: 0.059700012, z: 0.07679999}
+  m_LocalRotation: {x: 0.6799035, y: 0.66585094, z: 0.22215837, w: -0.21217799}
+  m_LocalPosition: {x: -0.09212744, y: 0.13509417, z: -0.1110909}
   m_LocalScale: {x: 0.28502208, y: 0.122324035, z: 0.66144943}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3349,7 +3360,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -3386,7 +3397,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145331}
+  - sourceTransform: {fileID: 127056612}
     weight: 1
 --- !u!65 &525936125
 BoxCollider:
@@ -3407,8 +3418,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.5633748, y: 1, z: 0.44982266}
+  m_Center: {x: 0.024378994, y: 6.029236e-10, z: -0.25433335}
 --- !u!23 &525936126
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3492,31 +3503,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.29140818
+      value: 0.08571005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1816282
+      value: 1.7762642
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.726656
+      value: 1.7534249
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99523836
+      value: 0.51000845
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.028976066
+      value: 0.48619944
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0023778041
+      value: 0.5120469
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09303442
+      value: -0.49123266
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0466dd790c0cfd34db4afe171eadd2a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3573,7 +3584,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145344}
+  - sourceTransform: {fileID: 127056634}
     weight: 1
 --- !u!1 &551635201
 GameObject:
@@ -3614,7 +3625,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 207900887}
+    TrackingTarget: {fileID: 127056672}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -3645,8 +3656,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551635201}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14588246, y: -0.5629215, z: 0.10174154, w: 0.807147}
-  m_LocalPosition: {x: 2.75, y: 3.57, z: 4.83}
+  m_LocalRotation: {x: -0.07525288, y: 0.89293104, z: -0.16271801, w: -0.4129576}
+  m_LocalPosition: {x: 3.06, y: 3.23, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3670,7 +3681,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 2.75, y: 3.57, z: 4.83}
+  FollowOffset: {x: 3.06, y: 3.23, z: 4.83}
 --- !u!114 &551635205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,7 +3695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Composition:
-    ScreenPosition: {x: -0.17, y: 0.19}
+    ScreenPosition: {x: -0.115424, y: 0.13592622}
     DeadZone:
       Enabled: 1
       Size: {x: 0.2, y: 0.2}
@@ -3894,8 +3905,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592787018}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042550806, y: -0, z: 0, w: 0.99909437}
-  m_LocalPosition: {x: -0.324, y: 1.4442, z: -0.02699995}
+  m_LocalRotation: {x: 0.6809211, y: -0.14474434, z: 0.6957626, w: 0.17694645}
+  m_LocalPosition: {x: -0.3182118, y: 1.0669343, z: -0.13958406}
   m_LocalScale: {x: 0.35205296, y: 0.119950496, z: 0.16393687}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3917,7 +3928,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -3954,7 +3965,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145364}
+  - sourceTransform: {fileID: 127056659}
     weight: 1
 --- !u!65 &592787022
 BoxCollider:
@@ -3975,8 +3986,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.25402623, y: 0.9120693, z: 1.8565358}
+  m_Center: {x: 0.37298727, y: 0.12671678, z: -0.42826802}
 --- !u!23 &592787023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4472,6 +4483,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506475630}
+  - {fileID: 405728741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017084400
@@ -4668,13 +4680,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036383103}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000374507, y: 0.0000001872535, z: -7.012775e-14, w: 1}
-  m_LocalPosition: {x: 0.12099999, y: 0.32699996, z: -0.018300056}
+  m_LocalRotation: {x: 0.4840308, y: -0.544958, z: 0.46592867, w: 0.50164276}
+  m_LocalPosition: {x: 0.27525473, y: 0.40688568, z: 0.012401938}
   m_LocalScale: {x: 0.28502208, y: 0.31494346, z: 0.38461784}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2087563815}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.436, y: -123.16, z: 0}
 --- !u!114 &1036383105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4691,7 +4703,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -4728,7 +4740,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145324}
+  - sourceTransform: {fileID: 127056609}
     weight: 1
 --- !u!65 &1036383107
 BoxCollider:
@@ -4749,8 +4761,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.4299093, y: 0.37671834, z: 1.0877748}
+  m_Center: {x: -0.033425186, y: 0.55593634, z: 0.30134058}
 --- !u!23 &1036383108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5873,7 +5885,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 51cbc516a8c3e364c9aa79e280e38142, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5912,7 +5924,7 @@ Transform:
   m_GameObject: {fileID: 1217105945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.31, y: 1.5205064, z: 2.37}
+  m_LocalPosition: {x: -2.37, y: 1.5205064, z: 2.09}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5991,8 +6003,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281728792}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042550802, y: -0, z: 0, w: 0.9990943}
-  m_LocalPosition: {x: -0.000000029802322, y: 1.3806, z: -0.037100077}
+  m_LocalRotation: {x: 0.50964165, y: -0.46866822, z: 0.5294813, w: 0.49016845}
+  m_LocalPosition: {x: -0.026713371, y: 0.8898416, z: -0.014955163}
   m_LocalScale: {x: 0.35205296, y: 0.31494346, z: 0.3053454}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6014,7 +6026,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -6051,7 +6063,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145336}
+  - sourceTransform: {fileID: 127056667}
     weight: 1
 --- !u!65 &1281728796
 BoxCollider:
@@ -6072,8 +6084,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6124271, y: 1, z: 1.1584138}
+  m_Center: {x: 3.058127e-10, y: -0.0000000011111598, z: -0.07920677}
 --- !u!23 &1281728797
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6153,8 +6165,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382763812}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7240622, y: 0.06408751, z: 0.06748226, w: 0.68342733}
-  m_LocalPosition: {x: 1.0321103, y: 2.0988498, z: -0.052226268}
+  m_LocalRotation: {x: 0.70442116, y: 0.014891014, z: -0.7094222, w: 0.01700744}
+  m_LocalPosition: {x: 0.7382559, y: 1.5197582, z: -0.013984952}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6239,8 +6251,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387273910}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.00000009362675, w: 1}
-  m_LocalPosition: {x: 0.12100002, y: 0.703, z: -0.018299937}
+  m_LocalRotation: {x: -0.5384932, y: 0.52196497, z: -0.46290293, w: -0.47254482}
+  m_LocalPosition: {x: 0.3257182, y: 0.67320496, z: 0.004897237}
   m_LocalScale: {x: 0.28502208, y: 0.31494346, z: 0.38461784}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6262,7 +6274,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -6299,7 +6311,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145322}
+  - sourceTransform: {fileID: 127056669}
     weight: 1
 --- !u!65 &1387273914
 BoxCollider:
@@ -6320,8 +6332,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61213225, y: 1, z: 0.48509368}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.61213225, y: 0.4653806, z: 0.5199476}
+  m_Center: {x: -0.0000000018653439, y: 0.7980599, z: 0.40223667}
 --- !u!23 &1387273915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6569,8 +6581,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468593518}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04255118, y: -0, z: 0, w: 0.9990943}
-  m_LocalPosition: {x: 0, y: 1.0439999, z: -0.023000002}
+  m_LocalRotation: {x: 0.4438414, y: -0.55045885, z: 0.44384122, w: 0.5504588}
+  m_LocalPosition: {x: 0.03538978, y: 0.72535175, z: -0.008545041}
   m_LocalScale: {x: 0.35205296, y: 0.31494346, z: 0.35205296}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6592,7 +6604,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -6629,7 +6641,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145334}
+  - sourceTransform: {fileID: 127056671}
     weight: 1
 --- !u!65 &1468593522
 BoxCollider:
@@ -6650,8 +6662,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.5881493, y: 1.0382545, z: 0.8862362}
+  m_Center: {x: 0.022297714, y: 0.019127207, z: 0.018888295}
 --- !u!23 &1468593523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6734,8 +6746,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637587662}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04255099, y: -0, z: 0, w: 0.9990943}
-  m_LocalPosition: {x: -0.66499996, y: 1.4442, z: -0.02699995}
+  m_LocalRotation: {x: 0.69812495, y: -0.107577376, z: 0.6972868, w: 0.121818565}
+  m_LocalPosition: {x: -0.119150996, y: 1.0729461, z: -0.22811246}
   m_LocalScale: {x: 0.35205296, y: 0.119950496, z: 0.16393687}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6757,7 +6769,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -6794,7 +6806,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145366}
+  - sourceTransform: {fileID: 127056660}
     weight: 1
 --- !u!65 &1637587666
 BoxCollider:
@@ -6815,8 +6827,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.2594637, y: 0.89756435, z: 1.7306031}
+  m_Center: {x: 0.58282053, y: 0.18625893, z: -0.36530134}
 --- !u!23 &1637587667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7145,8 +7157,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906844176}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04255099, y: 0.000000003983911, z: 0.00000009354195, w: 0.9990943}
-  m_LocalPosition: {x: 0.324, y: 1.4441998, z: -0.02699995}
+  m_LocalRotation: {x: -0.18602963, y: 0.6568281, z: 0.13703954, w: 0.71776736}
+  m_LocalPosition: {x: 0.32867754, y: 1.0406075, z: -0.13791633}
   m_LocalScale: {x: 0.35205296, y: 0.119950496, z: 0.16393687}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7168,7 +7180,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127056605}
+      - m_Target: {fileID: 127056675}
         m_TargetAssemblyTypeName: DamageController, Assembly-CSharp
         m_MethodName: EnqueueDamage
         m_Mode: 0
@@ -7205,7 +7217,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1200145340}
+  - sourceTransform: {fileID: 127056635}
     weight: 1
 --- !u!65 &1906844180
 BoxCollider:
@@ -7226,8 +7238,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.32454452, y: 1, z: 1.6694446}
+  m_Center: {x: -0.33772781, y: -0.000000114902456, z: 0.33472207}
 --- !u!23 &1906844181
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7333,4 +7345,3 @@ SceneRoots:
   - {fileID: 467080512}
   - {fileID: 288033719}
   - {fileID: 980344632}
-  - {fileID: 405728741}
